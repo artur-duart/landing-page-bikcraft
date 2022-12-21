@@ -1,93 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Bikcraft</title>
 
-		<link rel="stylesheet" href="styles/style.css" />
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bikcraft</title>
 
-	<body>
-		<!-- Utilizado para inserir imagens, descrevendo o caminho do arquivo em relação ao local do arquivo da página atual. -->
-		<img src="img/bikcraft.svg" alt="Bikcraft" />
+	<link rel="stylesheet" href="styles/style.css" />
+	<link href="//db.onlinewebfonts.com/c/85013b49776c144c20bbabcc0374d06a?family=HelveticaNowText+Bold"
+		rel="stylesheet" type="text/css" />
+</head>
 
+<body>
+	<header class="header">
+		<!-- Normalmente utilizados para direcionar o usuário para outras páginas, ou para outras partes da mesma página. -->
+		<a href="#" class="logo">nexusbike</a>
+		<!-- Marca um bloco de navegação. -->
+		<nav aria-label="primária">
+			<!-- Representa uma lista de itens sem ordem rígida. -->
+			<ul class="menu">
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Produtos</a></li>
+				<li><a href="#">Lojas</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Define uma divisão ou seção em um documento HTML. -->
+	<main class="conteudo">
 		<!-- Define uma divisão ou seção em um documento HTML. -->
-		<div class="menu">
+		<article class="introducao" aria-labelledby="label-introducao">
+			<!--  É um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. -->
+			<span class="detalhe"></span>
+			<!-- É o mais importante dos Headers. -->
+			<h1 id="label-introducao">Bicicletas Feitas a Mão</h1>
+			<!-- Representa um parágrafo. -->
+			<p>
+				A Rapidfire é a melhor NexusBike já criada pela nossa equipe. Ela vem
+				equipada com os melhores acessórios da marca.
+			</p>
 			<!-- Normalmente utilizados para direcionar o usuário para outras páginas, ou para outras partes da mesma página. -->
-			<a href="#">Sobre</a>
-			<a href="#">Produtos</a>
-			<a href="#">Lojas</a>
-			<a href="#">Contato</a>
-		</div>
+			<a class="botao" href="#">Ver Mais</a>
+		</article>
+		<!-- Utilizado para inserir imagens, descrevendo o caminho do arquivo em relação ao local do arquivo da página atual. -->
+		<img src="img/bicicleta.jpg" alt="Bicicleta Bikcraft Preta" />
+
+		<!-- As tags H2 são vinculadas aos subtítulos -->
+		<h2 class="subtitulo" id="label-vantagens">Vantagens NexusBike</h2>
 
 		<!-- Define uma divisão ou seção em um documento HTML. -->
-		<div class="conteudo">
+		<article aria-labelledby="label-vantagens">
 			<!-- Define uma divisão ou seção em um documento HTML. -->
-			<div class="introducao">
-				<!--  É um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. -->
-				<span class="detalhe"></span>
-				<!-- É o mais importante dos Headers. -->
-				<h1>Bicicletas Feitas a Mão</h1>
-				<!-- Representa um parágrafo. -->
-				<p>
-					A Nimbus Stark é a melhor Bikcraft já criada pela nossa
-					equipe. Ela vem equipada com os melhores acessórios da
-					marca.
-				</p>
-				<!-- Normalmente utilizados para direcionar o usuário para outras páginas, ou para outras partes da mesma página. -->
-				<a class="botao" href="#">Ver Mais</a>
-			</div>
-			<!-- Utilizado para inserir imagens, descrevendo o caminho do arquivo em relação ao local do arquivo da página atual. -->
-			<img src="img/bicicleta.jpg" alt="Bicicleta Bikcraft Preta" />
-
-			<!-- As tags H2 são vinculadas aos subtítulos -->
-			<h2 class="subtitulo">Vantagens Bikcraft</h2>
-
-			<!-- Define uma divisão ou seção em um documento HTML. -->
-			<div class="vantagens">
-				<!-- Define uma divisão ou seção em um documento HTML. -->
-				<div class="vantagens-item">
+			<ul class="vantagens">
+				<li class="vantagens-item">
 					<!-- Utilizado para inserir imagens, descrevendo o caminho do arquivo em relação ao local do arquivo da página atual. Nesse caso, não recebe o texto em "alt" por ser apenas um ícone. -->
 					<img src="img/eletrica.svg" alt="" />
 					<!-- Informam o assunto da página para os mecanismos de busca. -->
 					<h3>Motor Elétrico</h3>
 					<!-- Representa um parágrafo. -->
-					<p>
-						Permite você viajar distâncias inimaginaveis com a sua
-						bike
-					</p>
-				</div>
+					<p>Permite você viajar distâncias inimaginaveis com a sua bike</p>
+				</li>
 				<!-- Define uma divisão ou seção em um documento HTML. -->
-				<div class="vantagens-item">
+				<li class="vantagens-item">
 					<!-- Utilizado para inserir imagens, descrevendo o caminho do arquivo em relação ao local do arquivo da página atual. Nesse caso, não recebe o texto em "alt" por ser apenas um ícone. -->
 					<img src="img/velocidade.svg" alt="" />
 					<!-- Informam o assunto da página para os mecanismos de busca. -->
 					<h3>40 km/h</h3>
 					<!-- Representa um parágrafo. -->
-					<p>
-						A mais rápida bicicleta elétrica disponível hoje no
-						mercado
-					</p>
-				</div>
+					<p>A mais rápida bicicleta elétrica disponível hoje no mercado</p>
+				</li>
 				<!-- Define uma divisão ou seção em um documento HTML. -->
-				<div class="vantagens-item">
+				<li class="vantagens-item">
 					<!-- Utilizado para inserir imagens, descrevendo o caminho do arquivo em relação ao local do arquivo da página atual. Nesse caso, não recebe o texto em "alt" por ser apenas um ícone. -->
 					<img src="img/rastreador.svg" alt="" />
 					<!-- Informam o assunto da página para os mecanismos de busca. -->
 					<h3>Rastreador</h3>
 					<!-- Representa um parágrafo. -->
-					<p>
-						Rastreador e sistema anti-furto para garantir o seu
-						sossego
-					</p>
-				</div>
-			</div>
-		</div>
+					<p>Rastreador e sistema anti-furto para garantir o seu sossego</p>
+				</li>
+			</ul>
+		</article>
+	</main>
 
-		<div class="rodape">
-			<p>Artur Duarte 2022 &copy; Alguns direitos reservados.</p>
-		</div>
-	</body>
+	<footer class="rodape">
+		<p>Artur Duarte 2022 &copy; Alguns direitos reservados.</p>
+	</footer>
+</body>
+
 </html>

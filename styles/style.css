@@ -1,3 +1,15 @@
+@import url(//db.onlinewebfonts.com/c/85013b49776c144c20bbabcc0374d06a?family=HelveticaNowText+Bold);
+
+@font-face {
+	font-family: "HelveticaNowText Bold";
+	src: url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.eot");
+	src: url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.eot?#iefix") format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.woff2") format("woff2"),
+		url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.woff") format("woff"),
+		url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.ttf") format("truetype"),
+		url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.svg#HelveticaNowText Bold") format("svg");
+}
+
 * {
 	/* É o espaçamento externo do objeto. */
 	margin: 0;
@@ -20,16 +32,28 @@ body {
 	display: grid;
 
 	/* É usada para definir o espaçamento entre as linhas e colunas. */
-	gap: 50px;
+	gap: 3.125rem;
 
 	/* Alinha os itens na vertical. */
 	justify-items: center;
 
 	/* É o espaçamento externo do objeto, mas somente na parte de cima. */
-	margin-top: 60px;
+	margin-top: 3.75rem;
 
 	/* Utilizada para definir a cor do texto em um determinado elemento ou para toda a página HTML. */
 	color: #fff;
+}
+
+.header {
+	display: grid;
+	justify-items: center;
+	gap: 2rem;
+}
+
+.logo {
+	font-family: "HelveticaNowText Bold", "Segoe UI", Tahoma, Geneva, Verdana,
+		sans-serif;
+	font-size: 2.5em;
 }
 
 img {
@@ -50,7 +74,7 @@ a {
 
 p {
 	/* Altera o tamanho da fonte. */
-	font-size: 20px;
+	font-size: 1.25rem;
 
 	/* Permite controlar o espaçamento entre as linhas de um texto. */
 	line-height: 1.3;
@@ -64,10 +88,12 @@ p {
 	flex-wrap: wrap;
 
 	/* É usada para definir o espaçamento entre as linhas e colunas. */
-	gap: 20px;
+	gap: 1.25rem;
 
 	/* Justifica todo o conteúdo da grade no eixo da linha quando o tamanho total da grade é menor que o contêiner, ou seja, justifica os itens em relação ao eixo x (horizontal). */
 	justify-content: center;
+
+	list-style: none;
 }
 
 .menu a {
@@ -75,16 +101,18 @@ p {
 	background: #181a1b;
 
 	/* É o espaçamento interno do objeto. */
-	padding: 15px 30px;
+	padding: 0.94rem 1.88rem;
 
 	/* Define bordas arredondadas. */
-	border-radius: 4px;
+	border-radius: 0.25rem;
 
 	/* Serve para deixar as letras de determinado elemento maiúsculas. */
 	text-transform: uppercase;
 
 	/* É possível definir o tempo de execução, o delay, quais atributos serão afetados pela transição. */
 	transition: all 0.3s ease;
+
+	display: block;
 }
 
 /* O atributo hover é aquele usado quando passamos o cursor do mouse por cima de algum elemento na página html, e com isso aplicamos estilos sobre ele. */
@@ -101,7 +129,7 @@ p {
 	grid-template-columns: 1fr 1fr;
 
 	/* Estabelece a largura máxima de um elemento. */
-	max-width: 1000px;
+	max-width: 62.5rem;
 }
 
 .introducao {
@@ -109,7 +137,7 @@ p {
 	background: #181a1b;
 
 	/* É o espaçamento interno do objeto. */
-	padding: 40px;
+	padding: 2.5rem;
 
 	/* Serve para alinhar um texto pela direita. */
 	text-align: right;
@@ -121,7 +149,7 @@ p {
 	display: grid;
 
 	/* É usada para definir o espaçamento entre as linhas e colunas. */
-	gap: 20px;
+	gap: 1.25rem;
 
 	/* Justifica todo o conteúdo da grade no eixo da coluna quando o tamanho total da grade é menor que o contêiner, ou seja, alinha os itens do grid em relação ao eixo y (vertical). */
 	align-content: center;
@@ -130,12 +158,13 @@ p {
 	justify-items: end;
 }
 
-.detalhe {
+.introducao::before {
+	content: "";
 	/* Determina a largura da área de conteúdo de um elemento. */
-	width: 60px;
+	width: 3.75rem;
 
 	/* Determina a altra da área de conteúdo de um elemento. */
-	height: 4px;
+	height: 0.25rem;
 
 	/* Utilizamos essa propriedade para alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
 	background: #e21;
@@ -143,8 +172,12 @@ p {
 	/* Indica que o elemento ficará em uma posição fixa em relação à página. */
 	position: absolute;
 
-	top: 30px;
-	right: -30px;
+	top: 1.88rem;
+	right: -1.88rem;
+}
+
+.introducao h1 {
+	font-size: 2rem;
 }
 
 .botao {
@@ -152,10 +185,10 @@ p {
 	background: #be1b0e;
 
 	/* É o espaçamento interno do objeto. */
-	padding: 15px 30px;
+	padding: 0.94rem 1.88rem;
 
 	/* Define bordas arredondadas. */
-	border-radius: 4px;
+	border-radius: 0.25rem;
 
 	/* Serve para deixar as letras de determinado elemento maiúsculas. */
 	text-transform: uppercase;
@@ -172,7 +205,7 @@ p {
 
 .subtitulo {
 	/* Altera o tamanho da fonte. */
-	font-size: 64px;
+	font-size: 4rem;
 
 	/* Serve para deixar as letras de determinado elemento maiúsculas. */
 	text-transform: uppercase;
@@ -184,7 +217,7 @@ p {
 	text-align: right;
 
 	/* É o espaçamento interno do objeto. */
-	padding: 40px;
+	padding: 2.5rem;
 
 	/* Estabelece o alinhamento de um certo item dentro do bloco que o contém. */
 	align-self: center;
@@ -195,7 +228,7 @@ p {
 	background: #181a1b;
 
 	/* É o espaçamento interno do objeto. */
-	padding: 40px;
+	padding: 2.5rem;
 }
 
 .vantagens-item {
@@ -206,10 +239,19 @@ p {
 	grid-template-columns: auto 1fr;
 
 	/* É usada para definir o espaçamento entre as linhas e colunas. */
-	gap: 10px 20px;
+	gap: 0.63rem 1.25rem;
 
 	/* É o espaçamento interno do objeto. */
-	padding: 20px;
+	padding: 1.25rem;
+
+	border-left: 0.25rem solid transparent;
+
+	/* É possível definir o tempo de execução, o delay, quais atributos serão afetados pela transição. */
+	transition: all 0.3s ease;
+}
+
+.vantagens-item:hover {
+	border-left: 0.25rem solid #be1b0e;
 }
 
 .vantagens-item p {
@@ -228,5 +270,5 @@ p {
 	text-align: center;
 
 	/* É o espaçamento interno do objeto. */
-	padding: 40px;
+	padding: 2.5rem;
 }
