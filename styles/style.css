@@ -102,7 +102,8 @@ p {
 }
 
 .introducao h1 {
-    font-size: 2rem;
+	text-transform: uppercase;
+    font-size: 1.9rem;
 }
 
 .botao {
