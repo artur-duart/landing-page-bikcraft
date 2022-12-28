@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<!-- O elemento HTML é o elemento raiz de todo documento HTML -->
+<html>
+	<!-- O elemento head contém informações sobre o documento, como título, links para folhas de estilo, meta informações, etc. -->
 	<head>
+		<!-- O atributo charset especifica a codificação de caracteres do documento -->
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- O atributo viewport é usado para controlar o tamanho da visualização em dispositivos móveis -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- O elemento title define o título do documento, que é exibido na aba do navegador -->
 		<title>Nexusbike</title>
-
+		<!-- O elemento link permite incluir um arquivo CSS externo no documento -->
 		<link rel="stylesheet" href="styles/style.css" />
+
 		<link
 			href="//db.onlinewebfonts.com/c/85013b49776c144c20bbabcc0374d06a?family=HelveticaNowText+Bold"
 			rel="stylesheet" type="text/css" />
 	</head>
 
+	<!-- O elemento body contém todo o conteúdo visível da página -->
+
 	<body>
+		<!-- O elemento header representa um cabeçalho de conteúdo -->
 		<header class="header">
+			<!-- O elemento a representa um hiperlink -->
 			<a href="#" class="logo">nexusbike</a>
+
+			<!-- O elemento nav representa uma seção de navegação -->
+			<!-- O atributo aria-label fornece uma descrição da seção de navegação para leitores de tela -->
 			<nav aria-label="primária">
+				<!-- O elemento ul representa uma lista não ordenada -->
 				<ul class="menu">
+					<!-- O elemento li representa um item de lista -->
 					<li><a href="#">Sobre</a></li>
 					<li><a href="#">Produtos</a></li>
 					<li><a href="#">Lojas</a></li>
@@ -26,42 +39,56 @@
 			</nav>
 		</header>
 
-		<main class="conteudo">
-			<article class="introducao" aria-labelledby="label-introducao">
-				<span class="detalhe"></span>
-				<h1 id="label-introducao">Bicicletas feitas à mão</h1>
-				<p>
-					A Rapidfire é a melhor NexusBike já criada pela nossa equipe. Ela vem
-					equipada com os melhores acessórios da marca.
-				</p>
-				<a class="botao" href="#">Ver Mais</a>
+		<!-- O elemento main representa o conteúdo principal do documento -->
+		<main>
+			<!-- O elemento article representa um conteúdo autônomo, como um post de blog, uma notícia, etc. -->
+			<!-- O atributo aria-labelledby aponta para o ID do elemento que descreve o conteúdo -->
+			<article class="conteudo" aria-labelledby="label-introducao">
+				<div class="introducao">
+					<!-- O elemento h1 é um título de nível 1 -->
+					<h1 id="label-introducao">Bicicletas Feitas a Mão</h1>
+					<!-- O elemento p representa um parágrafo -->
+					<p>
+						A Rapidfire é a melhor Nexusbike já criada pela nossa equipe. Ela
+						vem equipada com os melhores acessórios da marca.
+					</p>
+					<a class="botao" href="/">Ver Mais</a>
+				</div>
+				<div class="introducao-cover">
+					<!-- O elemento img representa uma imagem -->
+					<img src="./img/bicicleta.jpg" alt="Bicicleta Bikcraft Preta" />
+				</div>
 			</article>
-			<img src="img/bicicleta.jpg" alt="Bicicleta Bikcraft Preta" />
 
-			<h2 class="subtitulo" id="label-vantagens">Vantagens NexusBike</h2>
-
-			<article aria-labelledby="label-vantagens">
+			<article class="conteudo conteudo-vantagem"
+				aria-labelledby="label-vantagens">
+				<!-- O elemento h2 é um título de nível 2 -->
+				<h2 class="subtitulo" id="label-vantagens">Vantagens Bikcraft</h2>
+				<!-- O elemento ul representa uma lista não ordenada -->
 				<ul class="vantagens">
 					<li class="vantagens-item">
-						<img src="img/eletrica.svg" alt="" />
+						<!-- O elemento img representa uma imagem -->
+						<img src="./img/eletrica.svg" alt="" />
+						<!-- O elemento h3 é um título de nível 3 -->
 						<h3>Motor Elétrico</h3>
-						<p>Permite você viajar distâncias inimaginaveis com a sua bike</p>
+						<p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
 					</li>
 					<li class="vantagens-item">
-						<img src="img/velocidade.svg" alt="" />
+						<img src="./img/velocidade.svg" alt="" />
 						<h3>40 km/h</h3>
-						<p>A mais rápida bicicleta elétrica disponível hoje no mercado</p>
+						<p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
 					</li>
 					<li class="vantagens-item">
-						<img src="img/rastreador.svg" alt="" />
+						<img src="./img/rastreador.svg" alt="" />
 						<h3>Rastreador</h3>
-						<p>Rastreador e sistema anti-furto para garantir o seu sossego</p>
+						<p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
 					</li>
 				</ul>
 			</article>
 		</main>
 
 		<footer class="rodape">
+			<!-- O elemento footer representa um rodapé de conteúdo -->
 			<p>Artur Duarte 2022 &copy; Alguns direitos reservados.</p>
 		</footer>
 	</body>

@@ -1,157 +1,310 @@
-@import url(//db.onlinewebfonts.com/c/85013b49776c144c20bbabcc0374d06a?family=HelveticaNowText+Bold);
-
-@font-face {
-    font-family: "HelveticaNowText Bold";
-    src: url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.eot");
-    src: url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.eot?#iefix") format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.woff2") format("woff2"),
-        url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.woff") format("woff"),
-        url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.ttf") format("truetype"),
-        url("//db.onlinewebfonts.com/t/85013b49776c144c20bbabcc0374d06a.svg#HelveticaNowText Bold") format("svg");
-}
-
 * {
+    /* Remove a margem (espaço) em todos os lados de cada elemento */
     margin: 0;
+    /* Remove o espaçamento (preenchimento) em todos os lados de cada elemento */
     padding: 0;
+    /* Faz com que o tamanho de um elemento inclua tanto o conteúdo quanto a borda e o preenchimento */
     box-sizing: border-box;
+    /* Define a fonte do texto para Arial ou, se não estiver disponível, para Helvetica ou qualquer outra fonte sem serifa */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #1d1f20;
+    /* Define a fonte do texto para Arial ou, se não estiver disponível, para Helvetica ou qualquer outra fonte sem serifa */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Define o elemento "body" como um grid (grade), o que permite organizar os elementos filhos dele em linhas e colunas */
     display: grid;
-    gap: 3.125rem;
+    /* Define um espaçamento de 60 pixels entre os elementos filhos do elemento "body" */
+    gap: 3.75rem;
+    /* Centraliza os elementos filhos horizontalmente dentro do elemento "body" */
     justify-items: center;
+    /* Adiciona uma margem de 60 pixels no topo do elemento "body" */
     margin-top: 3.75rem;
-    color: #fff;
-}
-
-.header {
-    display: grid;
-    justify-items: center;
-    gap: 2rem;
-}
-
-.logo {
-    font-family: "HelveticaNowText Bold", "Segoe UI", Tahoma, Geneva, Verdana,
-        sans-serif;
-    font-size: 2.5em;
+    /* Define a cor de fundo do elemento "body" como preto */
+    background-color: rgb(23, 25, 26);
+    /* Define a cor do texto do elemento "body" como branco */
+    color: rgb(232, 230, 227);
 }
 
 img {
+    /* Evita que a imagem exceda o tamanho da tela */
     max-width: 100%;
+    /* Exibe a imagem como um bloco */
     display: block;
 }
 
 a {
+    /* Remove o sublinhado dos links */
     text-decoration: none;
-    color: #fff;
 }
 
-p {
-    font-size: 1.25rem;
-    line-height: 1.3;
-}
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-    justify-content: center;
+ul {
+    /* Remove os marcadores da lista */
     list-style: none;
 }
 
+p {
+    /* Define o tamanho da fonte para 1.25 rem */
+    font-size: 1.25rem;
+    /* Define a altura da linha para 1.3 */
+    line-height: 1.3;
+}
+
+.header {
+    /* Define o elemento como um grid (grade), o que permite organizar os elementos filhos dele em linhas e colunas */
+    display: grid;
+    /* Define um espaçamento de 60 pixels entre os elementos filhos do elemento "header" */
+    gap: 3.75rem;
+    /* Centraliza os elementos filhos horizontalmente dentro do elemento "header" */
+    justify-items: center;
+}
+
+.logo {
+    /* Define a fonte do texto para "HelveticaNowText Bold" ou, se não estiver disponível, para "Segoe UI", Tahoma, Geneva, Verdana ou qualquer outra fonte sem serifa */
+    font-family: "HelveticaNowText Bold", "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
+    /* Define o tamanho da fonte para 2.5 em */
+    font-size: 2.5em;
+    /* Define a cor do texto como branco */
+    color: #fff;
+}
+
+.menu {
+    /* Define o elemento como um container flexível */
+    display: flex;
+    /* Faz com que os elementos filhos do elemento "menu" quebrem para a próxima linha se não couberem na mesma linha */
+    flex-wrap: wrap;
+    /* Define um espaçamento de 20 pixels entre os elementos filhos do elemento "menu" */
+    gap: 1.25rem;
+    /* Centraliza os elementos filhos horizontalmente dentro do elemento "menu" */
+    justify-content: center;
+}
+
 .menu a {
-    background: #181a1b;
-    padding: 0.94rem 1.88rem;
-    border-radius: 0.25rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+    /* Exibe o elemento como um bloco */
     display: block;
+    /* Adiciona um espaçamento de 1 rem na parte superior e inferior e de 2 rem nas laterais do elemento */
+    padding: 1rem 2rem;
+    /* Adiciona bordas arredondadas com raio de 4 pixels */
+    border-radius: 0.25rem;
+    /* Converte o texto para maiúsculas */
+    text-transform: uppercase;
+    /* Adiciona uma borda de 2 pixels e cor branca */
+    border: 0.125rem solid #fff;
+    /* Define a cor de fundo como preto */
+    background-color: rgb(24, 26, 27);
+    /* Define a cor do texto como branco */
+    color: rgb(232, 230, 227);
+    /* Define a cor da borda como cinza escuro */
+    border-color: rgb(48, 52, 54);
+    /* Aplica uma transição suave em todas as propriedades do elemento quando houver alterações nelas */
+    transition: all 0.3s ease;
 }
 
 .menu a:hover {
-    background-color: #101112;
+    /* Altera a cor da borda para vermelho quando o cursor do mouse estiver sobre o elemento */
+    border-color: #be1b0e;
 }
 
 .conteudo {
+    /* Define o elemento como um grid (grade), o que permite organizar os elementos filhos dele em linhas e colunas */
     display: grid;
+    /* Divide o elemento em duas colunas com mesma largura */
     grid-template-columns: 1fr 1fr;
+    /* Define o tamanho máximo do elemento como 1000 pixels */
     max-width: 62.5rem;
 }
 
 .introducao {
+    /* Define a cor de fundo como preto */
     background: #181a1b;
+    /* Adiciona um espaçamento de 40 pixels em todas as laterais do elemento */
     padding: 2.5rem;
+    /* Alinha o texto à direita */
     text-align: right;
+    /* Define a posição do elemento como relativa ao elemento pai */
     position: relative;
+    /* Define o elemento como um grid (grade), o que permite organizar os elementos filhos dele em linhas e colunas */
     display: grid;
+    /* Define um espaçamento de 20 pixels entre os elementos filhos do elemento "introducao" */
     gap: 1.25rem;
+    /* Centraliza os elementos filhos verticalmente dentro do elemento "introducao" */
     align-content: center;
+    /* Alinha os elementos filhos à direita dentro do elemento "introducao" */
     justify-items: end;
 }
 
-.introducao::before {
-    content: "";
-    width: 3.75rem;
-    height: 0.25rem;
-    background: #e21;
-    position: absolute;
-    top: 1.88rem;
-    right: -1.88rem;
+.introducao h1 {
+    /* Define o tamanho da fonte para 2 rem */
+    font-size: 2rem;
 }
 
-.introducao h1 {
-    text-transform: uppercase;
-    font-size: 1.9rem;
+.introducao::before {
+    /* Adiciona um elemento "pseudo" antes do elemento "introducao" */
+    content: "";
+    /* Define a largura do elemento "pseudo" como 60 pixels */
+    width: 3.75rem;
+    /* Define a altura do elemento "pseudo" como 4 pixels */
+    height: 0.25rem;
+    /* Define a cor de fundo do elemento "pseudo" como vermelho */
+    background: #be1b0e;
+    /* Define a posição do elemento "pseudo" como absoluta em relação ao elemento "introducao" */
+    position: absolute;
+    /* Posiciona o elemento "pseudo" 30 pixels abaixo do topo do elemento "introducao" */
+    top: 1.875rem;
+    /* Posiciona o elemento "pseudo" 30 pixels à esquerda do elemento "introducao" */
+    right: -1.875rem;
+}
+
+.introducao-cover img {
+    /* Ajusta a imagem para cobrir todo o espaço disponível mantendo as proporções */
+    object-fit: cover;
+    /* Define a altura da imagem como 100% */
+    height: 100%;
 }
 
 .botao {
+    /* Define a cor de fundo como vermelho */
     background: #be1b0e;
-    padding: 0.94rem 1.88rem;
+    /* Define a cor do texto como branco */
+    color: #fff;
+    /* Adiciona um espaçamento de 1 rem na parte superior e inferior e de 2 rem nas laterais do elemento */
+    padding: 1rem 2rem;
+    /* Adiciona bordas arredondadas com raio de 4 pixels */
     border-radius: 0.25rem;
+    /* Converte o texto para maiúsculas */
     text-transform: uppercase;
+    /* Aplica uma transição suave em todas as propriedades do elemento quando houver alterações nelas */
     transition: all 0.3s ease;
 }
 
 .botao:hover {
-    background-color: #520b06;
+    /* Altera a cor de fundo para vermelho escuro quando o cursor do mouse estiver sobre o elemento */
+    background: #520b06;
 }
 
 .subtitulo {
+    /* Define o tamanho da fonte para 4 rem */
     font-size: 4rem;
+    /* Converte o texto para maiúsculas */
     text-transform: uppercase;
-    color: rgba(232, 230, 227, 0.2);
+    /* Define a cor do texto como branco transparente */
+    color: rgba(216, 212, 207, 0.2);
+    /* Alinha o texto à direita */
     text-align: right;
+    /* Adiciona um espaçamento de 40 pixels em todas as laterais do elemento */
     padding: 2.5rem;
+    /* Centraliza o elemento verticalmente em relação ao elemento pai */
     align-self: center;
 }
 
 .vantagens {
+    /* Define a cor de fundo como preto */
     background: #181a1b;
+    /* Adiciona um espaçamento de 40 pixels em todas as laterais do elemento */
     padding: 2.5rem;
 }
 
 .vantagens-item {
+    /* Define o elemento como um grid (grade), o que permite organizar os elementos filhos dele em linhas e colunas */
     display: grid;
+    /* Divide o elemento em duas colunas, sendo que a primeira é do tamanho do elemento filho e a segunda ocupa o restante da largura disponível */
     grid-template-columns: auto 1fr;
-    gap: 0.63rem 1.25rem;
+    /* Define um espaçamento de 10 pixels na parte superior e inferior e de 20 pixels nas laterais dos elementos filhos do elemento "vantagens-item" */
+    gap: 0.625rem 1.25rem;
+    /* Adiciona um espaçamento de 20 pixels em todas as laterais dos elementos filhos do elemento "vantagens-item" */
     padding: 1.25rem;
+    /* Define a borda esquerda do elemento "vantagens-item" como transparente */
     border-left: 0.25rem solid transparent;
+    /* Aplica uma transição suave em todas as propriedades do elemento quando houver alterações nelas */
     transition: all 0.3s ease;
 }
 
 .vantagens-item:hover {
-    border-left: 0.25rem solid #be1b0e;
+    /* Altera a cor da borda esquerda para vermelho quando o cursor do mouse estiver sobre o elemento */
+    border-color: #be1b0e;
 }
 
 .vantagens-item p {
+    /* Posiciona o elemento "p" na segunda coluna do grid (grade) definido pelo elemento "vantagens-item" */
     grid-column: 2;
 }
 
 .rodape {
+    /* Define a cor de fundo como preto */
     background: #181a1b;
+    /* Define a largura do elemento como 100% */
     width: 100%;
+    /* Alinha o texto ao centro */
     text-align: center;
+    /* Adiciona um espaçamento de 40 pixels em todas as laterais do elemento */
     padding: 2.5rem;
+    /* Inclui o espaçamento de padding e border no tamanho total do elemento */
+    box-sizing: border-box;
+}
+
+@media (max-width: 64.0625rem) {
+
+    /* Aplica as regras de estilo abaixo apenas quando a largura da tela for menor ou igual a 1025 pixels */
+    .conteudo-vantagem {
+        /* Define o elemento "conteudo-vantagem" como uma única coluna */
+        grid-template-columns: 1fr;
+    }
+
+    .subtitulo {
+        /* Alinha o texto ao centro */
+        text-align: center;
+    }
+}
+
+@media (max-width: 48.0625rem) {
+
+    /* Aplica as regras de estilo abaixo apenas quando a largura da tela for menor ou igual a 769 pixels */
+    body {
+        /* Define um espaçamento de 30 pixels entre os elementos filhos do elemento "body" */
+        gap: 1.875rem;
+        /* Define um espaçamento de 20 pixels na parte superior do elemento "body" */
+        margin-top: 1.25rem;
+    }
+
+    .header {
+        /* Define um espaçamento de 30 pixels entre os elementos filhos do elemento "header" */
+        gap: 1.875rem;
+    }
+
+    .conteudo {
+        /* Define o elemento "conteudo" como uma única coluna */
+        grid-template-columns: 1fr;
+    }
+
+    .introducao {
+        /* Alinha o texto à esquerda */
+        text-align: left;
+        /* Centraliza os elementos filhos do elemento "introducao" na direção horizontal */
+        justify-items: start;
+    }
+
+    .introducao::before {
+        /* Oculta o elemento pseudo-elemento "::before" do elemento "introducao" */
+        display: none;
+    }
+
+    .subtitulo {
+        /* Define o tamanho da fonte como 3 rems */
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 30.0625rem) {
+
+    /* Aplica as regras de estilo abaixo apenas quando a largura da tela for menor ou igual a 481 pixels */
+    .subtitulo {
+        /* Define o tamanho da fonte como 2 rems */
+        font-size: 2rem;
+    }
+
+    p {
+        /* Define o tamanho da fonte como 1 rem */
+        font-size: 1rem;
+    }
 }
